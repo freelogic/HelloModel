@@ -5,8 +5,7 @@
 2. 神经元个数和参数W及偏置bias不相同；神经元的输入可以是1到多个W及Bias;一般情况下神经元个数少于参数；
 （对应到生物学，神经元比神经元的状态肯定少，假设一个神经元有多个状态，多个输入W/BIAS，等等）
 3. CNN的卷积层conv2d，padding="same|valid"，strides步长，filter个数及大小，input的feature map个数，都会影响卷几层参数
-4. TODO：计划增强开源库keras_sequential_ascii的输出，自动计算神经元个数和参数个数及计算过程；
-5. TODO：增加HelloModel项目的矩阵内容输出，用简单的小量数据来观察计算过程及矩阵数据变化
+
 ## 2模型结构（基于keras_sequential_ascii库）
            OPERATION           DATA DIMENSIONS   WEIGHTS(N)   WEIGHTS(%)
 
@@ -30,6 +29,7 @@
         Non-trainable params: 0
 
 ## 3模型代码参考（可直接查看HelloModel/layer_analyse.py)
+    #源码位置：https://github.com/freelogic/HelloModel
     #这里省略部分代码
     model = Sequential()
     l1_conv2d = Conv2D(2, [3,3], padding='valid', input_shape=[16,16,3],name="l1_conv2d",)

@@ -4,10 +4,15 @@ added by taihcu
 2.Try to use layer class in keras, which has function "get_output_at(node_index),get_output_shape_at(node_index),.."
 3.keras source code：https://github.com/fchollet/keras/blob/master/keras/engine/topology.py
 4.keras chinese userguide：http://keras-cn.readthedocs.io/en/latest/getting_started/functional_API/
-5.install keras-sequential-ascii:
+5.How to install keras-sequential-ascii:
     pip cmd: pip install git+git://github.com/stared/keras-sequential-ascii.git
     source codes: https://github.com/stared/keras-sequential-ascii
-
+6.How to install quiver for CNN visualize， please see my simple demo from below：
+  name：quiver_engine_install_demo-by-taichu.swf
+  video：https://pan.baidu.com/s/1mi5S59e  （free and valid forever depends on pan.baidu）
+7. TODO：
+    计划增强开源库keras_sequential_ascii的输出，自动计算神经元个数和参数个数及计算过程；
+    增加HelloModel项目的矩阵内容输出，用简单的小量数据来观察计算过程及矩阵数据变化
 
 '''
 from __future__ import print_function

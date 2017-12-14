@@ -3,7 +3,7 @@
 ## 简述
 1. 本项目期望build一个较小的简单model，并用少量图片训练，来看weight的变化。
 2. 本项目用到了quiver可视化库（安装方法见下面作者录制的视频资料）。
-3. [model及参数计算](.\platform\keras\HelloModel\layer_analyse.md)。
+3. [model及参数计算: layer_analyse.md](https://github.com/freelogic/HelloModel/blob/master/platform/keras/HelloModel/layer_analyse.md)。
 
 
 ## 资料

@@ -57,7 +57,7 @@ print("Initialized!")
 
 # 定义变量
 batch_size = 2
-epochs = 2
+epochs = 10
 nb_classes = 2
 IM_WIDTH, IM_HEIGHT = 16, 16
 nb_filters = [2, 3, 1, 1, 1]
@@ -65,7 +65,7 @@ pool_size = (2, 2)
 kernel_size = (3, 3)
 lr = 0.0001
 log_filepath = './layer_analyse'
-ag_ratio = 1.0
+ag_ratio = 10.0
 weight_decay  = 0.0001
 
 class CustomMetrics(Callback):
@@ -362,7 +362,7 @@ if __name__ == '__main__':
         model = train(args)
         parselayer(model.get_layer("l1_conv2d"))
 
-        #visualize_model(model)
+        visualize_model(model)
 
 
 
